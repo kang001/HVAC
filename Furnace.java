@@ -15,6 +15,11 @@ public class Furnace extends ServiceCall {
         super(serviceAddress, problemDescription, date);
 
         //TODO Error checking - is this a valid furnace type?
+            if (furnaceType != 1 | furnaceType != 2| furnaceType != 3){
+                System.out.println("This is not a valid furnace type!");
+            }
+
+
         this.furnaceType = furnaceType;
     }
 
